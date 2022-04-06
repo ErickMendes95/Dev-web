@@ -1,87 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-body, button, input, select, textarea {
-    font-family: 'Poppins', sans-serif;
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 :root {
-    --dark-blue: rgb(89, 89, 196);
-    --light-grey: #BFBFc1;
+  --dark-blue: rgb(89, 89, 196);
+  --light-grey: #bfbfc1;
 }
 
 h1 {
-    font-size: 80px;
-    margin: 0;
-    font-weight: 300;
+  font-size: 70px;
+  font-weight: 300;
+  margin: 0;
 }
 
-h2, h4 {
-    margin: 5px;
-}
-
-h4 {
-    font-weight: 300;
+h3 {
+  font-weight: 400;
 }
 
 .iphone-container {
-    width: 350px;
-    height: 700px;
-    border-radius: 45px;
-    border: 18px solid black;
-    background-color: var(--dark-blue);
-    position: relative;
+  width: 350px;
+  height: 700px;
+  border-radius: 45px;
+  border: 18px solid black;
+  background-color: rgb(11, 35, 43);
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 40px 10px 20px;
+}
+
+.iphone-container .battery {
     color: white;
-    text-align: center;
-    padding: 40px 10px 20px;
+    position: absolute;
+    width: 20px;
+    top: 3px;
+    right: 15px;
+}
+
+.iphone-container .message-circle {
+    color: lightgrey;
+    position: absolute;
+    width: 20px;
+    top: 3px;
+    left: 40px;
+}
+
+.iphone-container .wifi {
+    color: white;
+    position: absolute;
+    width: 20px;
+    top: 3px;
+    left: 15px;
+}
+
+.iphone-container .hour {
+    position: absolute;
+    top: -11px;
+    right: 40px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .iphone-coontainer .notch {
-    width: 180px;
-    height: 25px;
-    background: black;
-    border-radius: 0 0 30px 30px;
-    position: absolute;
-    top: 0;
-    left: calc(50%-90px);
+  width: 180px;
+  height: 25px;
+  background: black;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  top: 0;
+  left: calc(50%-90px);
 }
 
 .iphone-coontainer .iphone-menu {
-    width: 90px;
-    background-color: var(--light-grey);
-    height: 2px;
-    border-radius: 8px;
+  width: 90px;
+  background-color: var(--light-grey);
+  height: 2px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50%-45px);
+}
+
+.iphone-container .top-icon {
+  width: 50px;
+  height: 50px;
+  color: yellow;
+}
+
+.iphone-container .city-name {
+  font-weight: 300;
+  color: var(--light-grey);
+}
+
+.iphone-container .week {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.iphone-container .week .day .weekday {
+    background-color: red;
+}
+
+.iphone-container .week .day .temperature {
+    background-color: red;
+}
+
+.iphone-container .circulo {
+  background-color: white;
+  border-radius: 30px;
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  left: 35px;
+  margin-top: 20px;
+}
+
+.iphone-container .circulo .lock {
+  color: black;
+  position: absolute;
+  width: 30px;
+  height: 55px;
+  left: 15px;
+}
+
+.iphone-container .circulo .unlock {
+    color: black;
     position: absolute;
-    bottom: 20px;
-    left: calc(50%-45px);
+    width: 30px;
+    height: 55px;
+    right: 15px;
+  }
+
+.iphone-container .circulo .swipe1 {
+    color: black;
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    left: 70px;
 }
 
-.iphone-container svg {
-    width: 100px;
-    height: 100px;
-    margin: 40px 0 20px;
-}
-
-.iphone-container .week-weather {
-    color: var(--light-grey);
-    margin-top: 70px;
-    padding: 0 20px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 3fr 1fr ;
-    grid-gap: 1rem;
+.iphone-container .circulo .swipe2 {
+    color: black;
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    right: 70px;
 }
