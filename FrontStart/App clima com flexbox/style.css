@@ -52,47 +52,63 @@ h3 {
   padding: 40px 10px 20px;
 }
 
+.iphone-container::before {
+  content: "";
+  background-image: url('https://i.pinimg.com/750x/73/36/e8/7336e8c84a28c3d76e603297d4c21856.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+  border-radius: 20px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  
+}
+
 .iphone-container .battery {
-    color: white;
-    position: absolute;
-    width: 30px;
-    top: 3px;
-    right: 15px;
+  color: white;
+  position: absolute;
+  width: 30px;
+  top: 3px;
+  right: 15px;
 }
 
 .iphone-container .block {
-    background-color: white;
-    color: blue;
-    position: absolute;
-    width: 10px;
-    height: 9px;
-    top: 3px;
-    right: 30px;
-    font-size: 7px;
+  background-color: white;
+  color: blue;
+  position: absolute;
+  width: 10px;
+  height: 9px;
+  top: 3px;
+  right: 30px;
+  font-size: 7px;
 }
 
 .iphone-container .message-circle {
-    color: lightgrey;
-    position: absolute;
-    width: 25px;
-    top: 3.6px;
-    left: 45px;
+  color: lightgrey;
+  position: absolute;
+  width: 25px;
+  top: 3.6px;
+  left: 45px;
 }
 
 .iphone-container .wifi {
-    color: white;
-    position: absolute;
-    width: 25px;
-    top: 3px;
-    left: 15px;
+  color: white;
+  position: absolute;
+  width: 25px;
+  top: 3px;
+  left: 15px;
 }
 
 .iphone-container .hour {
-    position: absolute;
-    top: -10.7px;
-    right: 47px;
-    font-size: 15px;
-    font-weight: 300;
+  position: absolute;
+  top: -10.7px;
+  right: 47px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .iphone-coontainer .notch {
@@ -123,7 +139,6 @@ h3 {
 
 .iphone-container .city-name {
   font-weight: 300;
-  color: var(--light-grey);
 }
 
 .iphone-container .week {
@@ -133,13 +148,13 @@ h3 {
 }
 
 .iphone-container .week .day .weekday {
-    font-weight: 300;
-    font-size: 14px;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .iphone-container .week .day .temperature {
-    font-weight: 300;
-    font-size: 13px;
+  font-weight: 300;
+  font-size: 13px;
 }
 .iphone-container .circulo {
   background-color: white;
@@ -160,28 +175,28 @@ h3 {
 }
 
 .iphone-container .circulo .unlock {
-    color: black;
-    position: absolute;
-    width: 30px;
-    height: 55px;
-    right: 15px;
-    opacity: 0.4;
-  }
+  color: black;
+  position: absolute;
+  width: 30px;
+  height: 55px;
+  right: 15px;
+  opacity: 0.4;
+}
 
 .iphone-container .circulo .swipe1 {
-    color: black;
-    position: absolute;
-    width: 40px;
-    height: 55px;
-    left: 70px;
-    opacity: 0.7;
+  color: black;
+  position: absolute;
+  width: 40px;
+  height: 55px;
+  left: 70px;
+  opacity: 0.7;
 }
 
 .iphone-container .circulo .swipe2 {
-    color: black;
-    position: absolute;
-    width: 40px;
-    height: 55px;
-    right: 70px;
-    opacity: 0.6;
+  color: black;
+  position: absolute;
+  width: 40px;
+  height: 55px;
+  right: 70px;
+  opacity: 0.6;
 }
