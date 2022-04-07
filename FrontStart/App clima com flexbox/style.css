@@ -22,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: whitesmoke;
 }
 
 :root {
@@ -54,31 +55,42 @@ h3 {
 .iphone-container .battery {
     color: white;
     position: absolute;
-    width: 20px;
+    width: 30px;
     top: 3px;
     right: 15px;
+}
+
+.iphone-container .block {
+    background-color: white;
+    color: blue;
+    position: absolute;
+    width: 10px;
+    height: 9px;
+    top: 3px;
+    right: 30px;
+    font-size: 7px;
 }
 
 .iphone-container .message-circle {
     color: lightgrey;
     position: absolute;
-    width: 20px;
-    top: 3px;
-    left: 40px;
+    width: 25px;
+    top: 3.6px;
+    left: 45px;
 }
 
 .iphone-container .wifi {
     color: white;
     position: absolute;
-    width: 20px;
+    width: 25px;
     top: 3px;
     left: 15px;
 }
 
 .iphone-container .hour {
     position: absolute;
-    top: -11px;
-    right: 40px;
+    top: -10.7px;
+    right: 47px;
     font-size: 15px;
     font-weight: 300;
 }
@@ -117,17 +129,18 @@ h3 {
 .iphone-container .week {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .iphone-container .week .day .weekday {
-    background-color: red;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .iphone-container .week .day .temperature {
-    background-color: red;
+    font-weight: 300;
+    font-size: 13px;
 }
-
 .iphone-container .circulo {
   background-color: white;
   border-radius: 30px;
@@ -152,6 +165,7 @@ h3 {
     width: 30px;
     height: 55px;
     right: 15px;
+    opacity: 0.4;
   }
 
 .iphone-container .circulo .swipe1 {
@@ -160,6 +174,7 @@ h3 {
     width: 40px;
     height: 55px;
     left: 70px;
+    opacity: 0.7;
 }
 
 .iphone-container .circulo .swipe2 {
@@ -168,4 +183,5 @@ h3 {
     width: 40px;
     height: 55px;
     right: 70px;
+    opacity: 0.6;
 }
