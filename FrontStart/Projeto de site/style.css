@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-    --purple: #52B0E2;
-    --green: #15CDCB;
-    --bg-dark: #212226;
-    --light-grey: #E0DEDE;
+  --purple: #52b0e2;
+  --green: #15cdcb;
+  --bg-dark: #212226;
+  --light-grey: #e0dede;
 
-    --menu-height: 75px;
+  --menu-height: 75px;
 }
 
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
   font-family: "Poppins", sans-serif;
   color: white;
 }
@@ -18,72 +22,74 @@ body, button, input, select, textarea {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   background-color: var(--bg-dark);
 }
 
 h1 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 p {
-    color: var(--light-grey);
+  color: var(--light-grey);
 }
 
 button {
-    background-color: var(--purple);
-    border: 0;
-    border-radius: 16px;
-    padding: 8px 35px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+  background-color: var(--purple);
+  border: 0;
+  border-radius: 16px;
+  padding: 8px 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 header {
-    height: calc(100vh - var(--menu-height));
-    display: flex;
-    align-items: center;
+  height: calc(100vh - var(--menu-height));
+  display: flex;
+  align-items: center;
 }
 
 header .container {
-    width: 50%;
-    padding: 0 100px;
-    height: fit-content;
+  width: 50%;
+  padding: 0 80px;
+  height: fit-content;
+  margin-bottom: 20px;
 }
 
-header .container h1,h2 {
-    color: var(--green);
+header .container h1,
+h2 {
+  color: var(--green);
 }
 
 header .container button {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 nav {
-    display: flex;
-    height: var(--menu-height);   
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 75px;
-    background-color: var(--bg-dark);
-    position: sticky;
-    top: 0;
+  display: flex;
+  height: var(--menu-height);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 75px;
+  background-color: var(--bg-dark);
+  position: sticky;
+  top: 0;
 }
 
 nav img {
-    height: 70px;
-    left: -50px;
+  height: 70px;
 }
 
 nav ul a {
-    font-size: 22px;
-    color: var(--green);
-    text-decoration: none;
-    margin: 0 35px;
+  font-size: 22px;
+  color: var(--green);
+  text-decoration: none;
+  margin: 0 35px;
 }
