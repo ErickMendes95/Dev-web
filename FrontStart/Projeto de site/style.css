@@ -77,7 +77,8 @@ nav {
 }
 
 nav img {
-    height: 45px;
+    height: 70px;
+    left: -50px;
 }
 
 nav ul a {
