@@ -48,6 +48,14 @@ button {
     font-size: 18px;
 }
 
+.title-purple {
+    color: var(--purple);
+}
+
+.title-green {
+    color: var(--green);
+}
+
 header {
     height: calc(100vh - var(--menu-height));
     display: flex;
@@ -64,10 +72,6 @@ header .container img {
     display: none;
 }
 
-header .container h1, h2 {
-    color: var(--green);
-}
-
 header .container button {
     margin-top: 40px;
 }
@@ -76,7 +80,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: var(--menu-height);
     background: var(--bg-dark);
     padding: 0 100px;
@@ -92,7 +95,6 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
-
 }
 
 nav ul a {
@@ -107,9 +109,45 @@ nav ul a svg {
 
 section {
     height: 1500px;
-    background: purple;
 }
 
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 40%;
+    border-radius: 10px;
+    transform: rotate(-2deg);
+}
+
+.about-me .img-container .line {
+    width: calc(45%);
+    position: absolute;
+    height: 40%;
+    border: 1px solid var(--purple);
+    top: -12px;
+    left: calc(50% - 35%/2 - 38px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-2.8deg);
+    color: var(--green);
+}
+
+/* Tamanho um pouco menor de desktop */
 @media (max-width: 1000px) {
     header .container {
         width: 100%;
@@ -122,6 +160,7 @@ section {
     nav {
         padding: 0 30px;
     }
+
 }
 
 /* Tablet */
@@ -155,6 +194,9 @@ section {
         padding: 0 40px;
     }
 
+    header .container img {
+        display: none;
+    }
     nav {
         position: fixed;
         width: 100%;
