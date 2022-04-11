@@ -85,6 +85,8 @@ nav {
     padding: 0 100px;
     position: sticky;
     top: 0;
+
+    z-index: 100;
 }
 
 nav img {
@@ -255,6 +257,10 @@ section {
         margin: 0 auto 10px;
     }
 
+    .about-me {
+        padding: 2.5rem;
+    }
+
     .about-me .img-container img {
         object-position: top center;
         width: 44%;
@@ -268,4 +274,5 @@ section {
         left: calc(50% - 35%/2 - 2rem);
         margin-right: 1rem;
     }
+
 }
