@@ -90,7 +90,7 @@ nav {
   background: var(--bg-dark);
   padding: 0 100px;
   position: sticky;
-  top: 0.8rem;
+  top: 0.1rem;
 
   z-index: 100;
 }
@@ -119,6 +119,7 @@ section {
   height: 100%;
 }
 
+/* Sessão Sobre Mim */
 .about-me {
   display: flex;
   padding: 100px;
@@ -160,6 +161,7 @@ section {
   color: var(--green);
 }
 
+/* Sessão sobre serviços */
 .services {
   text-align: center;
 }
@@ -204,6 +206,57 @@ h2 {
   height: 2.5rem;
   border-radius: 50%;
   background-color: var(--purple);
+}
+
+/* Sessão sobre portfolio */
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio .portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.portfolio .portfolio-container .portfolio-card {
+  background-color: #2f3034;
+  border: 1px solid var(--purple);
+  border-radius: 16px;
+  width: 100%;
+  margin: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio .portfolio-container img {
+  width: 70%;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li {
+  color: var(--green);
+  font-weight: 300;
+  border: 0.18rem solid var(--green);
+  border-radius: 50%;
+  margin: 1rem;
+  justify-content: space-around;
+  padding: 0.2rem 0.6rem;
+  
 }
 
 /* RESPONSIVIDADE */
@@ -251,6 +304,15 @@ h2 {
   .services .services-container {
     font-size: 80%;
   }
+
+  .portfolio .portfolio-container img {
+    width: 70%;
+  }
+
+  .portfolio .portfolio-container p {
+    font-weight: 300;
+    font-size: 1rem;
+  }
 }
 
 /* Tablet */
@@ -287,6 +349,10 @@ h2 {
   }
 
   .services .services-container {
+    flex-direction: column;
+  }
+
+  .portfolio .portfolio-container {
     flex-direction: column;
   }
 }
