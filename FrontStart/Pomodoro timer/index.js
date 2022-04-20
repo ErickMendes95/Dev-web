@@ -14,25 +14,25 @@ updateDom();
 
 function startCounter() {
     TIMER = setInterval( () => {
-        TIMER = TIME_IN_SECONDS--;
+        TIME_IN_SECONDS--;
         updateDom();
     }, 1000);
 }
 
 function pauseCounter() {
-    clearInterval (TIMER);
+    clearInterval(TIMER);
 }
 
 function resetCounter() {
-    clearInterval (TIMER);
+    clearInterval(TIMER);
     TIME_IN_SECONDS = INITIAL_TIME_IN_SECONDS;
     updateDom();
 }
 
 function updateDom() {
     const minutes = Math.floor(TIME_IN_SECONDS / 60);
-    document.getElementById('min').innerHtml = String(minutes).padStart(2,0);        
+    document.getElementById('min').innerHTML = String(minutes).padStart(2,0);        
     
     const seconds = TIME_IN_SECONDS % 60;
-    document.getElementById('sec').innerHtml = String(seconds).padStart(2, 0);
+    document.getElementById('sec').innerHTML = String(seconds).padStart(2, 0);
 }
