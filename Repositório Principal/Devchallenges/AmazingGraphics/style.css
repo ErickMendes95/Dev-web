@@ -9,84 +9,79 @@ body, button, input, select, textarea {
 }
 
 html, body {
-  margin: 0;
+  margin: 0 auto;
 }
-
 
 :root {
     --orange: #D2872C;
     --gray: #766F68;
 }
 
-header .container {
+section.nav-bar .container {
     display: flex;
-    margin: 0 auto;
-}
-
-header .container .logo {
-    margin: 2rem;
-    font-weight: 600;
-    font-size: 2rem;
-    padding: 0;
-    color: var(--orange);
-}
-
-header .container ul{
-    width: 60%;
-    margin-top: 2rem;
-    margin-left: 18rem;
-    padding: 0;
-    height: 100%;
     align-items: center;
-    display: flex;
     justify-content: space-evenly;
-    font-size: 2rem;
-}
-section.display {
-    height: 100vh;
 }
 
-section.display .container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 10rem;
-    margin-left: 7rem;
-
-}
-
-section.display .container h1 {
-    font-size: 5rem;
-    text-align: start;
-    font-weight: 600;
-    color: var(--gray);
-    z-index: 100;
-    margin: 0;
-}
-
-section.display .container p {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--gray);
-}
-
-section.display .container button {
-    font-size: 2rem;
+section.nav-bar .container .logo {
     margin: 1rem;
-    border-radius: 1rem;
-    background-color: var(--orange);
-    padding: 1rem 1rem;
-    color: white;
-    z-index: 2;
-    background-color: red;
+    align-self: center;
+    color: var(--orange);
+    font-size: 1.8rem;
 }
 
-section.display .container img {
+section.nav-bar .container ul  {
+    padding: 0;
+    margin: 1rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    align-self: flex-end;
+    text-decoration: none;
+}
+
+section.nav-bar .container ul a {
+    margin: 4rem;
+    font-weight: 600;
+}
+
+section.display {
+    margin-top: 10rem;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+section.display h1 {
+    font-size: 3.6rem;
+    margin: 1rem;
+    color: rgb(102, 101, 101);
+    z-index: 100;
+}
+
+section.display p{
+    font-size: 1.6rem;
+    margin: 1rem;
+    color: var(--gray);
+    margin-top: 2rem;
+}
+
+
+section.display button {
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--orange);
+    padding: 1rem 10rem;
+    border-radius: 1rem;
+    margin: 2rem 0 0 0;
+}
+
+section.display img {
     position: absolute;
-    width: 100%;
-    height: 80%;
-    top: 10%;
-    left: 95%;
-    z-index: 1;
+    width: 50rem;
+    top: 1rem;
+    right: -40rem;
 }
